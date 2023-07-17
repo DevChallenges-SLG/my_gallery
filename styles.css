@@ -15,7 +15,7 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 .container {
-  width: 936px;
+  width: 983px;
   margin: 0 auto;
 }
 
@@ -89,7 +89,7 @@ html {
 }
 
 .images-container {
-  width: 936px;
+  width: 983px;
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -144,7 +144,7 @@ html {
   grid-row: 3/4;
 }
 footer {
-  margin: 64px auto 24px;
+  margin: 134px auto 24px;
 }
 footer p {
   margin: 0 auto;
@@ -162,4 +162,57 @@ footer p span {
   font-weight: 700;
   line-height: normal;
   text-decoration-line: underline;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 375px;
+  }
+  .card-user {
+    width: 261px;
+    margin: 30px 50px 39px 64px;
+  }
+  .card-user figure img {
+    width: 102px;
+    margin-bottom: 11.24px;
+  }
+  .card-user figure figcaption h1 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .card-user figure figcaption p {
+    font-size: 10px;
+  }
+  .card-user .user-informations-container {
+    margin-top: 12px;
+  }
+  .card-user .user-informations-container .user-information {
+    width: 78px;
+    height: 52px;
+  }
+  .card-user .user-informations-container .user-information h3 {
+    font-size: 12px;
+  }
+  .card-user .user-informations-container .user-information p {
+    font-size: 12px;
+  }
+
+  .images-container {
+    width: 351px;
+    gap: 11.7px;
+    margin: 0 auto;
+  }
+  #img-1,
+  #img-4,
+  #img-5,
+  #img-6 {
+    width: 110px;
+  }
+  #img-2,
+  #img-3 {
+    width: 230px;
+  }
+  footer {
+    margin: 44px auto 0px;
+  }
 }
